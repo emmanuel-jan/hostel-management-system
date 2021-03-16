@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-dark" style="background-color: #198754;">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">Hostel Management System</span>
+        </div>
+      </nav>
+
+    <div class="container">
+        <div class="card mt-5">
+            <div class="card-body">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                    <label class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="John">
+                    </div>
+                    <div class="col-md-6">
+                    <label class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastNname" placeholder="Doe">
+                    </div>
+                    <div class="col-6">
+                    <label class="form-label">Username</label>
+                    <input type="text" class="form-control" id="Username" placeholder="Enter Your Username">
+                    </div>
+                    <div class="col-6">
+                    <label class="form-label">Usertype</label>
+                    <select id="usertype" class="form-select">
+                        <option value="" selected>Choose...</option>
+                        <option value = "admin" disabled>Admin</option>
+                        <option value = "landlord" disabled>Landlord</option>
+                        <option value = "student">Student</option>   
+                    </select>
+                    </div>
+                    <div class="col-md-6">
+                    <label class="form-label">Phone Number</label>
+                    <input type="number" class="form-control" id="phoneNumber" placeholder="07-XX-XXX-XXX">
+                    </div>
+                    <div class="col-md-6">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="johndoe@jd.com">
+                    </div>
+                    <div class="col-md-6">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="**********">
+                    </div>
+                    <div class="col-md-6">
+                    <label class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="**********">
+                    </div>
+                    <div class="col-12">
+                    <button type="submit" class="btn btn-success">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer text-muted">
+                Already have an account? <a href="login.html" class="card-link">Login</a>
+            </div>
+          </div>
+    </div>
+</body>
+</html>
